@@ -1,0 +1,9 @@
+{
+  "name": "stretch-project-1",
+  "version": "0.0.0",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-lighthouselabs": "lighthouse-labs/eslint-config-lighthouselabs"
+  }
+}

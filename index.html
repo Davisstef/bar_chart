@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="dist/barchart.js"></script>
+  <link rel="stylesheet" href="dist/barchart.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="prism.css">
+  <script src="prism.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+  <h1>Barchart samples</h1>
+  <p>Below you will find some examples of barchart.js in use.
+    For full documentation, please see the
+    <a href="https://github.com/pgoshulak/barchart/blob/master/README.md">readme</a>
+    page on the github repo.
+  </p>
+
+  <div id="samples-container">
+    <div class="section-info">
+      <h2>Basic Usage</h2>
+      <p>
+        A basic barchart is formed like this:
+      </p>
+      <pre><code id="barchart-basic-code" class="language-js">
+      </code></pre>
+    </div>
+    <div class="section-chart">
+      <div id="barchart-basic"></div>
+    </div>
+
+    <div class="section-info">
+      <h2>Colored barcharts</h2>
+      <p>
+        Many aspects of the barchart can be colored:
+      </p>
+      <pre><code id="barchart-colored-code" class="language-js">
+      </code></pre>
+    </div>
+    <div class="section-chart">
+      <div id="barchart-colored"></div>
+    </div>
+
+    <div class="section-info">
+      <h2>Multi-bar charts</h2>
+      <p>
+        You can have multi-bar columns mixed in with regular columns.
+        Notice what happens when you omit the option <code>gridlineSpacingY</code>:
+      </p>
+      <pre><code id="barchart-multi-code" class="language-js">
+      </code></pre>
+    </div>
+    <div class="section-chart">
+      <div id="barchart-multi"></div>
+    </div>
+
+    <div class="section-info">
+      <h2>Unlabelled charts</h2>
+      <p>
+        You can choose to hide the labels on the bars
+      </p>
+      <pre><code id="barchart-nolabel-code" class="language-js">
+      </code></pre>
+    </div>
+    <div class="section-chart">
+      <div id="barchart-nolabel"></div>
+    </div>
+
+  </div>
+
+  <!-- <div id="barchart-1"></div>
+  <div id="barchart-2"></div> -->
+</body>
+<script src="samples.js"></script>
+</html>
