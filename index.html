@@ -1,80 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="dist/barchart.js"></script>
-  <link rel="stylesheet" href="dist/barchart.css">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="prism.css">
-  <script src="prism.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Bar Chart Project</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-  <h1>Barchart samples</h1>
-  <p>Below you will find some examples of barchart.js in use.
-    For full documentation, please see the
-    <a href="https://github.com/pgoshulak/barchart/blob/master/README.md">readme</a>
-    page on the github repo.
-  </p>
 
-  <div id="samples-container">
-    <div class="section-info">
-      <h2>Basic Usage</h2>
-      <p>
-        A basic barchart is formed like this:
-      </p>
-      <pre><code id="barchart-basic-code" class="language-js">
-      </code></pre>
-    </div>
-    <div class="section-chart">
-      <div id="barchart-basic"></div>
-    </div>
+  <h1>Bar Chart Generater</h1>
+  <div id="barChart"></div>
+  <br><!-- <hr> -->
+  <h1 id='customize'>Customize Chart:</h1>
+  <hr>
+  <h3>Change Title of Bar Chart:</h3>
+  <div id='changeTitle'>
+    Title: <input
+      placeholder='text'
+      class="inputTitle"
+      type="text"
+      name="Title">
+    Font Size: <input
+      placeholder='font-size'
+      class="inputFontSize"
+      type="text"
+      name="TitleFontSize">
+    Colour: <input
+      placeholder='text'
+      class="inputFontColour"
+      type="color"
+      name="TitleFontColour">
+    <button class="changeTitle">Make Changes</button>
+  </div><hr>
 
-    <div class="section-info">
-      <h2>Colored barcharts</h2>
-      <p>
-        Many aspects of the barchart can be colored:
-      </p>
-      <pre><code id="barchart-colored-code" class="language-js">
-      </code></pre>
-    </div>
-    <div class="section-chart">
-      <div id="barchart-colored"></div>
-    </div>
-
-    <div class="section-info">
-      <h2>Multi-bar charts</h2>
-      <p>
-        You can have multi-bar columns mixed in with regular columns.
-        Notice what happens when you omit the option <code>gridlineSpacingY</code>:
-      </p>
-      <pre><code id="barchart-multi-code" class="language-js">
-      </code></pre>
-    </div>
-    <div class="section-chart">
-      <div id="barchart-multi"></div>
-    </div>
-
-    <div class="section-info">
-      <h2>Unlabelled charts</h2>
-      <p>
-        You can choose to hide the labels on the bars
-      </p>
-      <pre><code id="barchart-nolabel-code" class="language-js">
-      </code></pre>
-    </div>
-    <div class="section-chart">
-      <div id="barchart-nolabel"></div>
-    </div>
-
+  <div id='single'>
+    <h3>Add Data to Chart:</h3>
+    <div id="userInput">
+      Label: <input placeholder='text' class="inputLabel" type="text" name="Label">
+      Value: <input placeholder='number' class="inputValue" type="text" name="Value">
+      <br><br>
+      Label Colour: <input
+      placeholder='Colour'
+      class="inputLabelColour"
+      type="color"
+      name="labelColour">
+      Bar Colour: <input
+      placeholder='Colour'
+      class="inputBarColour"
+      type="color"
+      name="barColour">
+      <br><br>
+      <button class="inputData">Add To Chart</button><br><br>
+      Click for Stacked Bar: <button class="toggleType">Stacked</button>
+    </div><hr>
   </div>
 
-  <!-- <div id="barchart-1"></div>
-  <div id="barchart-2"></div> -->
+  <div id='stacked'>
+    <h3>Add Stacked Data to Chart:</h3>
+    <div id="userInput">
+      Label: <input placeholder='text' class="inputLabel" type="text" name="Label">
+      Label Colour: <input
+        placeholder='Colour'
+        class="inputLabelColour"
+        type="color"
+        name="labelColour">
+      <br><br>
+      <div class='addCatagory'>
+        Catagory Name:
+        <input placeholder='text' class="inputCat" type="text" name="Catagory">
+        Catagory Colour: <input
+        placeholder='Colour'
+        class="inputCatColour"
+        type="color"
+        name="catColour">
+        Value:
+        <input placeholder='number' class="inputValue" type="text" name="Value">
+        <br>
+      </div>
+      <br>
+      <button class="addCat">Add Catagory</button>
+      <button class="inputStackedData">Add To Chart</button> <br><br>
+      Click for Single Value Bar: <button class="toggleType">Single Value</button>
+    </div><hr>
+  </div>
+
+  <h3>Change Width and Height of Bar Chart:</h3>
+  <div id='changeDim'>
+    Width: <input
+      placeholder='number in px, cm or %'
+      class="inputWidth"
+      type="text"
+      name="Width">
+    Height: <input
+      placeholder='number in px, cm or %'
+      class="inputHeight"
+      type="text"
+      name="height">
+    <button class="inputDim">Make Changes</button>
+  </div><hr>
+
+  <h3>Change Vertical Position of Bar Values:</h3>
+  <div>
+    <input id='positionTop' type="radio" name="verticalPosition" value="top">
+    Top
+    <br>
+    <input id='positionMiddle' type="radio" name="verticalPosition" value="middle"> Middle
+    <br>
+    <input id='positionBottom' type="radio" name="verticalPosition" value="bottom">
+    Bottom
+  </div><hr>
+
+  <h3>Change Bar Width:</h3>
+  <div id='changeDim'>
+      Bar Width: <input
+      placeholder='number in px, cm or %'
+      class="inputSpacing"
+      type="text"
+      name="barSpacing">
+      <button class="barSpacing">Make Change</button>
+  </div><hr>
+
+  <script src="jquery.js"></script>
+  <script src="script.js"></script>
 </body>
-<script src="samples.js"></script>
 </html>
