@@ -1,83 +1,82 @@
-/*body{
-  text-align: center;
-}*/
-.barChart{
-  border: 2px solid black;
-  border-collapse: collapse;
-  margin-left: auto;
-  margin-right: auto;
-}
-.label{
-  border-right: 2px solid black;
-}
-.bar{
-  text-align: center;
-}
-.subTable{
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.dataCell{
-  width: 20%;
-}
-.yCell{
-  border-right: 1px solid black;
-  width: 1%;
-}
-.yTable{
-  height: 100%;
-}
-.yAxis{
-  vertical-align: text-top;
-  text-align: right;
-}
-.xLabel{
-  border-top: 1px solid black;
-  height: 80px;
-
-}
-p{
-  word-break: break-all;
-}
-#title{
-  text-align: center;
-}
-h2{
-  text-align: center;
-}
-button{
-  margin-right: 2em;
-  margin-left: 2em;
-}
-.newTable{
-  width: 100%;
-  height: 100%;
-}
-#customize{
-  border-top: 2px dashed black;
-  padding-top: 1em;
-}
-.hidden{
-  display: none;
-}
-.show{
+#graph {
   display: block;
+  padding: 5px;
 }
-.stackTable{
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black;
+
+.bars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 200;
 }
-.colourCell{
-  width: 25%;
+
+.bar {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-top: auto;
+  margin-bottom: 0;
   text-align: center;
 }
-.catCell{
-  width: 75%;
+
+.xLabels {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+p {
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.title {
   text-align: center;
 }
-.labelHeader{
+
+.top {
+  align-items: flex-start;
+}
+
+.middle {
+  align-items: center;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+.xAxisLabel {
   text-align: center;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.yAxisLabel {
+  max-width: 5%;
+  margin: auto;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+}
+
+.flex-container {
+  display: flex;
+  /* height: 100%; */
+  margin: 0;
+}
+
+.flex-container .column-left {
+  flex: 5%;
+}
+
+.flex-container .column-right {
+  flex: 95%;
+}
+#flexCont2 {
+  display: inline-block;
 }

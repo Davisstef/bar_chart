@@ -1,23 +1,9 @@
 {
-  "name": "bar-chart-project",
-  "version": "1.0.0",
+  "name": "stretch-project-1",
+  "version": "0.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Davisstef/bar_chart.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Davisstef/bar_chart/issues"
-  },
-  "homepage": "https://github.com/Davisstef/bar_chart#readme",
-  "dependencies": {
-    "eslint": "^5.9.0",
+  "devDependencies": {
+    "eslint": "^3.19.0",
     "eslint-config-lighthouselabs": "lighthouse-labs/eslint-config-lighthouselabs"
   }
 }

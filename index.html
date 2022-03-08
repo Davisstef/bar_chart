@@ -1,125 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Bar Chart Project</title>
-  <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
-
-  <h1>Bar Chart Generater</h1>
-  <div id="barChart"></div>
-  <br><!-- <hr> -->
-  <h1 id='customize'>Customize Chart:</h1>
-  <hr>
-  <h3>Change Title of Bar Chart:</h3>
-  <div id='changeTitle'>
-    Title: <input
-      placeholder='text'
-      class="inputTitle"
-      type="text"
-      name="Title">
-    Font Size: <input
-      placeholder='font-size'
-      class="inputFontSize"
-      type="text"
-      name="TitleFontSize">
-    Colour: <input
-      placeholder='text'
-      class="inputFontColour"
-      type="color"
-      name="TitleFontColour">
-    <button class="changeTitle">Make Changes</button>
-  </div><hr>
-
-  <div id='single'>
-    <h3>Add Data to Chart:</h3>
-    <div id="userInput">
-      Label: <input placeholder='text' class="inputLabel" type="text" name="Label">
-      Value: <input placeholder='number' class="inputValue" type="text" name="Value">
-      <br><br>
-      Label Colour: <input
-      placeholder='Colour'
-      class="inputLabelColour"
-      type="color"
-      name="labelColour">
-      Bar Colour: <input
-      placeholder='Colour'
-      class="inputBarColour"
-      type="color"
-      name="barColour">
-      <br><br>
-      <button class="inputData">Add To Chart</button><br><br>
-      Click for Stacked Bar: <button class="toggleType">Stacked</button>
-    </div><hr>
-  </div>
-
-  <div id='stacked'>
-    <h3>Add Stacked Data to Chart:</h3>
-    <div id="userInput">
-      Label: <input placeholder='text' class="inputLabel" type="text" name="Label">
-      Label Colour: <input
-        placeholder='Colour'
-        class="inputLabelColour"
-        type="color"
-        name="labelColour">
-      <br><br>
-      <div class='addCatagory'>
-        Catagory Name:
-        <input placeholder='text' class="inputCat" type="text" name="Catagory">
-        Catagory Colour: <input
-        placeholder='Colour'
-        class="inputCatColour"
-        type="color"
-        name="catColour">
-        Value:
-        <input placeholder='number' class="inputValue" type="text" name="Value">
-        <br>
-      </div>
-      <br>
-      <button class="addCat">Add Catagory</button>
-      <button class="inputStackedData">Add To Chart</button> <br><br>
-      Click for Single Value Bar: <button class="toggleType">Single Value</button>
-    </div><hr>
-  </div>
-
-  <h3>Change Width and Height of Bar Chart:</h3>
-  <div id='changeDim'>
-    Width: <input
-      placeholder='number in px, cm or %'
-      class="inputWidth"
-      type="text"
-      name="Width">
-    Height: <input
-      placeholder='number in px, cm or %'
-      class="inputHeight"
-      type="text"
-      name="height">
-    <button class="inputDim">Make Changes</button>
-  </div><hr>
-
-  <h3>Change Vertical Position of Bar Values:</h3>
-  <div>
-    <input id='positionTop' type="radio" name="verticalPosition" value="top">
-    Top
-    <br>
-    <input id='positionMiddle' type="radio" name="verticalPosition" value="middle"> Middle
-    <br>
-    <input id='positionBottom' type="radio" name="verticalPosition" value="bottom">
-    Bottom
-  </div><hr>
-
-  <h3>Change Bar Width:</h3>
-  <div id='changeDim'>
-      Bar Width: <input
-      placeholder='number in px, cm or %'
-      class="inputSpacing"
-      type="text"
-      name="barSpacing">
-      <button class="barSpacing">Make Change</button>
-  </div><hr>
-
-  <script src="jquery.js"></script>
-  <script src="script.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lighthouse Labs Bar Chart</title>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js"></script>
+  </head>
+  <body>
+    <script>
+      drawBarChart(
+        [
+          ["May", 21.4, 22.3, 25.5],
+          ["June", 30.0, 30.5, 32.2, 31],
+          ["July", 33.0, 32.5, 35, 35],
+          ["August", 31.2, 35, 34.4, 32],
+          ["September", 29, 26.6, 25, 22.2],
+          ["October", 19.3, 12, 13, 15],
+          ["November", 10.5],
+        ],
+        {
+          graph: {
+            width: 600,
+            height: 500,
+            title: "Average Monthly Temperature by Week 2019",
+            titleColor: "black",
+            titleSize: 20,
+            yTickSpacing: 10,
+          },
+          bar: {
+            backgroundColor: [
+              ["#3368FF", "#7700cc", "#09E33B", "#E309B1"],
+              ["#ff0000", "#00cc00"],
+              "purple",
+              "blue",
+              "yellow",
+              "red",
+            ],
+            xAxisLabel: "Month",
+            yAxisLabel: "Temperature (C)",
+            labelColor: "black",
+            labelSize: 16,
+            dataLabelPos: "mid",
+            barSpacing: 10,
+            // barShadow: "yes",
+          },
+        },
+        "div"
+      );
+    </script>
+  </body>
 </html>
