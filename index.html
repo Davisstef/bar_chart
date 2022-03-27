@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lighthouse Labs Bar Chart</title>
+    <title>Stefan's Bar Chart</title>
     <script
       src="https://code.jquery.com/jquery-3.5.1.min.js"
       integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
@@ -16,19 +16,24 @@
     <script>
       drawBarChart(
         [
-          ["May", 21.4, 22.3, 25.5],
-          ["June", 30.0, 30.5, 32.2, 31],
-          ["July", 33.0, 32.5, 35, 35],
-          ["August", 31.2, 35, 34.4, 32],
-          ["September", 29, 26.6, 25, 22.2],
-          ["October", 19.3, 12, 13, 15],
-          ["November", 10.5],
+          ["January", 8170],
+          ["February", 10621],
+          ["March", 12830],
+          ["April", 12205],
+          ["May", 10680],
+          ["June", 9107],
+          ["July", 7567],
+          ["August", 7062],
+          ["September", 7731],
+          ["October", 8579],
+          ["November", 8700],
+          ["December", 7262]
         ],
         {
           graph: {
             width: 600,
             height: 500,
-            title: "Average Monthly Temperature by Week 2019",
+            title: "2021 Quebec Housing Sales",
             titleColor: "black",
             titleSize: 20,
             yTickSpacing: 10,
@@ -43,7 +48,7 @@
               "red",
             ],
             xAxisLabel: "Month",
-            yAxisLabel: "Temperature (C)",
+            yAxisLabel: "Number",
             labelColor: "black",
             labelSize: 16,
             dataLabelPos: "mid",
