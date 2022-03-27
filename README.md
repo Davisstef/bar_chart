@@ -26,3 +26,14 @@ Here is an example of a rendered bar chart on GitHub pages.
 This project requires jQuery. To install jQuery to your site visit https://jquery.com/.
 
 
+### Learning Resources
+
+https://codepen.io/ (for testing purposes)
+https://www.anychart.com/blog/2017/10/25/javascript-bar-chart-tutorial/
+https://plotly.com/javascript/bar-charts/#basic-bar-chart
+https://www.chartjs.org/docs/latest/charts/bar.html
+https://www.w3schools.com/
+https://javascript.plainenglish.io/how-to-create-a-javascript-bar-chart-a87dd57e91f9
+https://canvasjs.com/html5-javascript-bar-chart/
+
+
