@@ -31,4 +31,8 @@ Here is an example of a rendered bar chart on GitHub pages.
 - https://javascript.plainenglish.io/how-to-create-a-javascript-bar-chart-a87dd57e91f9
 - https://canvasjs.com/html5-javascript-bar-chart/
 
+### Future Roadmap
 
+- JQuery should to be integrated into the html code.
+- The bar chart could use more features, especially customizable value measurements on the X and Y axes.
+- There should be an allowance for an unlimited amout of bars without compromising the layout to fully customize the chart as needed.
