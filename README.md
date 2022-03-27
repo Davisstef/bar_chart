@@ -21,11 +21,6 @@ Here is an example of a rendered bar chart on GitHub pages.
 <img width="623" alt="Screen Shot 2022-03-27 at 1 01 43 AM" src="https://user-images.githubusercontent.com/60591525/160267495-473071a2-9a4f-47a3-8041-a2e9af25089b.png">
 
 
-### Prerequisites
-
-This project requires jQuery. To install jQuery to your site visit https://jquery.com/.
-
-
 ### Learning Resources
 
 - https://codepen.io/ (for testing purposes)
