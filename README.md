@@ -35,4 +35,4 @@ Here is an example of a rendered bar chart on GitHub pages.
 
 - JQuery should to be integrated into the html code.
 - The bar chart could use more features, especially customizable value measurements on the X and Y axes.
-- There should be an allowance for an unlimited amout of bars without compromising the layout to fully customize the chart as needed. This 
+- There should be an allowance for an unlimited amout of bars without compromising the layout to fully customize the chart as needed. 
