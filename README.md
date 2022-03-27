@@ -18,7 +18,8 @@ To call this chart, you need to use the function drawBarChart(data, options, ele
 
 Here is an example of a rendered bar chart on GitHub pages.
 
-<img width="631" alt="Screen Shot 2022-03-27 at 1 01 43 AM" src="https://user-images.githubusercontent.com/60591525/160267469-61dc0276-50c9-4011-ae23-5c3f3304d668.png">
+<img width="623" alt="Screen Shot 2022-03-27 at 1 01 43 AM" src="https://user-images.githubusercontent.com/60591525/160267495-473071a2-9a4f-47a3-8041-a2e9af25089b.png">
+
 
 ### Prerequisites
 
