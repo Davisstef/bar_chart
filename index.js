@@ -153,7 +153,6 @@ const createChart = function (
 };
 
 // Creates bar element
-
 const createBar = function (values, barOpts, index) {
   let tmp = document.createElement("div");
 
