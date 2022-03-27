@@ -234,7 +234,6 @@ const drawBarChart = function (data, options, element) {
     }
 
     // Multi Bar Element
-
     barColorArr = createBarColorArray(barOpts.backgroundColor, data);
 
     if (data[elem].length > 2) {
@@ -255,7 +254,6 @@ const drawBarChart = function (data, options, element) {
 
       for (let i = 1; i < data[elem].length; i++) {
         createBar(data[elem], barOpts, i);
-        // createMultiBar(data[elem], barOpts, i);
         stylizeBar(
           data[elem][0],
           data[elem][i],
@@ -288,12 +286,11 @@ const drawBarChart = function (data, options, element) {
     '<div class="xLabels container flex" id="xLabels"></div>'
   );
   rotateText("xLabels");
-  // console.log("xLabel children length: ", child.length);
   createYTicks($(".bars").height(), graphOpts.yTickSpacing * yScale * 0.8);
   labelXAxis(barOpts);
 
   // This block of code checks the width of bar elements with the inputted bar spacing against the graph width.
-  // If it is greater, then the container will have the justifyContent space-around property set
+  // If it is greater, then the container will have the space-around property.
 
   if (checkTotalBarWidth("bars", graphOpts.width)) {
     modifyElementMargin(0, "bar");
@@ -302,22 +299,6 @@ const drawBarChart = function (data, options, element) {
     document.getElementById("xLabels").style.justifyContent = "space-around";
   }
 
-  // $("#graph").append(
-  //   $(document.createElement("div")).attr({
-  //     id: "flexCont1",
-  //     class: "overall flex-container",
-  //   })
-  // );
-
-  // $("#graph").append(
-  //   $(document.createElement("div")).attr({
-  //     id: "flexCont2",
-  //     class: "inner flex-container",
-  //   })
-  // );
-
-  // console.log($("#flexCont2"));
-  // console.log($("#tickMarks"));
   $(".flex").wrapAll(
     $(document.createElement("div")).attr({
       id: "flexCont1",
@@ -331,6 +312,4 @@ const drawBarChart = function (data, options, element) {
       class: "inner flex-container column-right",
     })
   );
-
-  // $(".yAxisLabel").wrap($("#flexCont1"));
 };
